@@ -504,3 +504,27 @@
 .blog-item a:hover i::after {
     width: 50px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .dropdown-menu {
+        position: static;
+        float: none;
+    }
+    .navbar .dropdown-menu.show {
+        display: block;
+    }
+    .navbar .dropdown-menu .dropdown-item {
+        padding: 10px 20px;
+    }
+    .container-fluid {
+        padding: 0 15px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
