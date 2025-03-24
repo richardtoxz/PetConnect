@@ -27,7 +27,6 @@
         $(window).resize(toggleNavbarMethod);
     });
 
-
     // Modal Video
     $(document).ready(function () {
         var $videoSrc;
@@ -45,7 +44,6 @@
         })
     });
     
-    
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -58,7 +56,6 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
 
     // Product carousel
     $(".product-carousel").owlCarousel({
@@ -88,7 +85,6 @@
         }
     });
 
-
     // Team carousel
     $(".team-carousel").owlCarousel({
         autoplay: true,
@@ -116,7 +112,6 @@
             }
         }
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
