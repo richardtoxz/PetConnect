@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aba do pet</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="pet-profile-wrapper">
+        <div class="pet-profile-card">
+            <div class="profile-header text-center">
+                <img src="images/pet1.jpg" alt="Foto do Pet" class="pet-avatar">
+                <div>
+                <button class="btn-upload-photo">Alterar Foto</button>
+                </div>
+                <h2>Perfil do Pet</h2>
+            </div>
+    
+            <div class="profile-info">
+                <p><strong>Nome:</strong> Rex</p>
+                <p><strong>Raça:</strong> Golden Retriever</p>
+                <p><strong>Idade:</strong> 3 anos</p>
+                <p><strong>Peso:</strong> 25 kg</p>
+                <p><strong>Tamanho:</strong> Médio</p>
+                <p><strong>Cor:</strong> Dourado</p>
+                <p><strong>Observações:</strong> Alergia a frango</p>
+            </div>
+    
+            <div class="profile-info">
+                <h4>Vacinas</h4>
+                <ul>
+                    <li>V8 - 12/01/2024</li>
+                    <li>Antirrábica - 15/03/2024</li>
+                    <li>Gripe Canina - 05/06/2024</li>
+                </ul>
+    
+                <h4>Histórico de Doenças</h4>
+                <ul>
+                    <li>Otite - 2023</li>
+                    <li>Gastroenterite - 2022</li>
+                </ul>
+    
+                <h4>Histórico de Consultas</h4>
+                <ul>
+                    <li>Rotina - 20/02/2024</li>
+                    <li>Check-up - 16/03/2024</li>
+                </ul>
+            </div>
+    
+            <div class="calendar-container">
+                <h4>Calendário de Eventos</h4>
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td class="event" data-tooltip="Consulta veterinária - Clínica Pet Saúde">10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td class="event" data-tooltip="Banho & Tosa - Clínica Pet Saúde">15</td>
+                            <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ff5e3a; /* mesmo laranja de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.pet-profile-wrapper {
+    max-width: 450px;
+    width: 100%;
+}
+
+.pet-profile-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pet-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.btn-upload-photo {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.profile-header h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.profile-info p,
+.profile-info ul li {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.profile-info h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.calendar-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 14%;
+    position: relative;
+}
+
+.event {
+    background-color: #ff5e3a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilização do tooltip */
+.event:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    { title: 'Consulta Veterinária', start: '2024-04-10', url: '#perfilclinica1' },
+                    { title: 'Banho & Tosa', start: '2024-04-15', url: '#perfilclinica1' }
+                ]
+            });
+            calendar.render();
+        });
+    </script>
+    
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
