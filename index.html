@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="assets/img/pata.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,16 +17,17 @@
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="assets/lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -74,7 +75,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
         <a href="Login_v4/login.html" class="navbar-brand ms-lg-5">
-            <img src="img/Pet Shop (2) (1).png" alt="Logo do Pet Shop" height="150">
+            <img src="assets/img/Pet Shop (2) (1).png" alt="Logo do Pet Shop" height="150">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -156,7 +157,7 @@
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="img/about.jpg"
+                        <img class="position-absolute w-100 h-100 rounded" src="assets/img/about.jpg"
                             style="object-fit: cover;">
                     </div>
                 </div>
@@ -225,90 +226,217 @@
 
 
 
-    <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="border-start border-5 border-orange ps-5 mb-5" style="max-width: 600px;">
-                <h6 class="text-orange text-uppercase">Serviços</h6>
-                <h1 class="display-5 text-uppercase mb-0">Tudo o que seu pet precisa em um só lugar</h1>
+   <!-- Services Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="border-start border-5 border-orange ps-5 mb-5" style="max-width: 600px;">
+            <h6 class="text-orange text-uppercase">Serviços</h6>
+            <h1 class="display-5 text-uppercase mb-0">Tudo o que seu pet precisa em um só lugar</h1>
+        </div>
+        <div class="row g-5">
+            <!-- Serviço 1 -->
+            <div class="col-md-6">
+                <div class="service-item bg-light d-flex p-4">
+                    <i class="flaticon-house display-1 text-orange me-4"></i>
+                    <div>
+                        <h5 class="text-uppercase mb-3">Encontre Clínicas e Pet Shops</h5>
+                        <p>Localize os melhores estabelecimentos perto de você para consultas veterinárias, banho,
+                            tosa e muito mais.</p>
+                        <a class="text-orange text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#modal1">Saiba mais<i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="row g-5">
-                <div class="col-md-6">
-                    <div class="service-item bg-light d-flex p-4">
-                        <i class="flaticon-house display-1 text-orange me-4"></i>
-                        <div>
-                            <h5 class="text-uppercase mb-3">Encontre Clínicas e Pet Shops</h5>
-                            <p>Localize os melhores estabelecimentos perto de você para consultas veterinárias, banho,
-                                tosa e muito mais.</p>
-                            <a class="text-orange text-uppercase" href="">Saiba mais<i
-                                    class="bi bi-chevron-right"></i></a>
-                        </div>
+
+            <!-- Serviço 2 -->
+            <div class="col-md-6">
+                <div class="service-item bg-light d-flex p-4">
+                    <i class="flaticon-food display-1 text-orange me-4"></i>
+                    <div>
+                        <h5 class="text-uppercase mb-3">Loja Online</h5>
+                        <p>Compre alimentos, brinquedos e medicamentos para seu pet diretamente pelo PetConnect.</p>
+                        <a class="text-orange text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#modal2">Saiba mais<i class="bi bi-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="service-item bg-light d-flex p-4">
-                        <i class="flaticon-food display-1 text-orange me-4"></i>
-                        <div>
-                            <h5 class="text-uppercase mb-3">Loja Online</h5>
-                            <p>Compre alimentos, brinquedos e medicamentos para seu pet diretamente pelo PetConnect.</p>
-                            <a class="text-orange text-uppercase" href="">Saiba mais<i
-                                    class="bi bi-chevron-right"></i></a>
-                        </div>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div class="col-md-6">
+                <div class="service-item bg-light d-flex p-4">
+                    <i class="flaticon-grooming display-1 text-orange me-4"></i>
+                    <div>
+                        <h5 class="text-uppercase mb-3">Histórico de Saúde</h5>
+                        <p>Acompanhe o histórico de consultas, vacinas e tratamentos do seu pet de forma organizada
+                            e acessível.</p>
+                        <a class="text-orange text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#modal3">Saiba mais<i class="bi bi-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="service-item bg-light d-flex p-4">
-                        <i class="flaticon-grooming display-1 text-orange me-4"></i>
-                        <div>
-                            <h5 class="text-uppercase mb-3">Histórico de Saúde</h5>
-                            <p>Acompanhe o histórico de consultas, vacinas e tratamentos do seu pet de forma organizada
-                                e acessível.</p>
-                            <a class="text-orange text-uppercase" href="">Saiba mais<i
-                                    class="bi bi-chevron-right"></i></a>
-                        </div>
+            </div>
+
+            <!-- Serviço 4 -->
+            <div class="col-md-6">
+                <div class="service-item bg-light d-flex p-4">
+                    <i class="flaticon-cat display-1 text-orange me-4"></i>
+                    <div>
+                        <h5 class="text-uppercase mb-3">Agendamentos Online</h5>
+                        <p>Marque consultas veterinárias, banho e tosa com poucos cliques, diretamente pelo
+                            aplicativo.</p>
+                        <a class="text-orange text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#modal4">Saiba mais<i class="bi bi-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="service-item bg-light d-flex p-4">
-                        <i class="flaticon-cat display-1 text-orange me-4"></i>
-                        <div>
-                            <h5 class="text-uppercase mb-3">Agendamentos Online</h5>
-                            <p>Marque consultas veterinárias, banho e tosa com poucos cliques, diretamente pelo
-                                aplicativo.</p>
-                            <a class="text-orange text-uppercase" href="">Saiba mais<i
-                                    class="bi bi-chevron-right"></i></a>
-                        </div>
+            </div>
+
+            <!-- Serviço 5 -->
+            <div class="col-md-6">
+                <div class="service-item bg-light d-flex p-4">
+                    <i class="flaticon-dog display-1 text-orange me-4"></i>
+                    <div>
+                        <h5 class="text-uppercase mb-3">Bate-papo com Especialistas</h5>
+                        <p>Tire dúvidas diretamente com veterinários e especialistas para garantir o bem-estar do
+                            seu pet.</p>
+                        <a class="text-orange text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#modal5">Saiba mais<i class="bi bi-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="service-item bg-light d-flex p-4">
-                        <i class="flaticon-dog display-1 text-orange me-4"></i>
-                        <div>
-                            <h5 class="text-uppercase mb-3">Bate-papo com Especialistas</h5>
-                            <p>Tire dúvidas diretamente com veterinários e especialistas para garantir o bem-estar do
-                                seu pet.</p>
-                            <a class="text-orange text-uppercase" href="">Saiba mais<i
-                                    class="bi bi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="service-item bg-light d-flex p-4">
-                        <i class="flaticon-vaccine display-1 text-orange me-4"></i>
-                        <div>
-                            <h5 class="text-uppercase mb-3">Promoções e Benefícios</h5>
-                            <p>Aproveite descontos exclusivos em produtos e serviços para seu pet, disponíveis no
-                                PetConnect.</p>
-                            <a class="text-orange text-uppercase" href="">Saiba mais<i
-                                    class="bi bi-chevron-right"></i></a>
-                        </div>
+            </div>
+
+            <!-- Serviço 6 -->
+            <div class="col-md-6">
+                <div class="service-item bg-light d-flex p-4">
+                    <i class="flaticon-vaccine display-1 text-orange me-4"></i>
+                    <div>
+                        <h5 class="text-uppercase mb-3">Promoções e Benefícios</h5>
+                        <p>Aproveite descontos exclusivos em produtos e serviços para seu pet, disponíveis no
+                            PetConnect.</p>
+                        <a class="text-orange text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#modal6">Saiba mais<i class="bi bi-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Services End -->
+</div>
+<!-- Services End -->
 
+<!-- Modals -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel1">🏥 Encontre Clínicas e Pet Shops</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Com o PetConnect, localizar clínicas veterinárias e pet shops perto de você ficou muito mais fácil. Através de uma busca rápida e inteligente, você pode encontrar estabelecimentos por localização, tipo de serviço, especialidade e avaliações de outros tutores.
+  
+          Os perfis exibem dados importantes como endereço, horário de funcionamento, serviços disponíveis, fotos do local e profissionais atuantes. Você também pode iniciar um bate-papo direto para tirar dúvidas ou agendar um serviço de forma rápida e segura.
+  
+          Essa funcionalidade é ideal para quem busca praticidade e confiança ao cuidar do bem-estar do seu pet.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel2">🛒 Loja Online</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          A Loja Online do PetConnect oferece tudo o que seu pet precisa em um só lugar. Rações, brinquedos, medicamentos, produtos de higiene e acessórios – tudo com entrega rápida e segura, direto na sua casa.
+  
+          Com uma navegação fácil e categorias organizadas, você pode comparar preços, ler avaliações de outros tutores e aproveitar promoções exclusivas. Ideal para quem busca praticidade e comodidade no dia a dia, sem abrir mão da qualidade.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel3">📋 Histórico de Saúde</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Tenha controle total da saúde do seu pet com o histórico digital do PetConnect. Acompanhe consultas, exames, vacinas e prescrições em um só lugar, de forma organizada e acessível.
+  
+          Essa funcionalidade permite visualizar datas, observações dos profissionais e recomendações de tratamento, facilitando o acompanhamento ao longo do tempo e auxiliando em futuras visitas veterinárias.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel4">📅 Agendamentos Online</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Com o PetConnect, agendar consultas, vacinações, banho e tosa ficou muito mais simples. Escolha o serviço desejado, selecione o profissional, defina o horário e pronto — tudo direto pelo app, sem ligações ou filas.
+  
+          Receba confirmações e lembretes automáticos, visualize a disponibilidade em tempo real e tenha total controle da rotina de cuidados do seu pet na palma da mão.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modalLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel5">💬 Bate-papo com Especialistas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Tenha acesso direto a veterinários e especialistas sem sair de casa. Pelo PetConnect, você pode tirar dúvidas, pedir orientações sobre saúde, comportamento e alimentação do seu pet em tempo real.
+  
+          Um canal prático e seguro para garantir apoio profissional sempre que precisar, seja para emergências ou cuidados do dia a dia.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modalLabel6" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel6">🎁 Promoções e Benefícios</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Economize enquanto cuida do seu pet! No PetConnect, você encontra promoções exclusivas, cupons de desconto, campanhas sazonais e vantagens especiais em diversos serviços e produtos.
+  
+          Fique por dentro das novidades e aproveite ofertas personalizadas direto no app.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
     <!-- Encontre estabelecimentos perto de você -->
     <div class="container-fluid py-5 bg-light">
@@ -335,7 +463,7 @@
             <div class="row mt-5">
                 <div class="col-lg-12">
                     <div id="mapa-placeholder" class="rounded shadow-sm overflow-hidden">
-                        <img src="img/map-placeholder.PNG" alt="Mapa Simulado" class="img-fluid w-100 rounded">
+                        <img src="assets/img/map-placeholder.PNG" alt="Mapa Simulado" class="img-fluid w-100 rounded">
                     </div>
                 </div>
             </div>
@@ -347,105 +475,81 @@
 
 
     <!-- Products Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="border-start border-5 border-orange ps-5 mb-5" style="max-width: 600px;">
-                <h6 class="text-orange text-uppercase">Produtos</h6>
-                <h1 class="display-5 text-uppercase mb-0">Produtos para seus melhores amigos</h1>
-            </div>
-            <div class="owl-carousel product-carousel">
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-1.png" alt="">
-                        <h6 class="text-uppercase">Ração natural para pássaros</h6>
-                        <h5 class="text-orange mb-0">R$59,99</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-2.png" alt="">
-                        <h6 class="text-uppercase">Ração para felinos</h6>
-                        <h5 class="text-orange mb-0">R$99,90</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-3.png" alt="">
-                        <h6 class="text-uppercase">Ração para cachorros pequeno porte - sabor Carne</h6>
-                        <h5 class="text-orange mb-0">R$119,90</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-3.png" alt="">
-                        <h6 class="text-uppercase">Ração para cachorros pequeno porte - sabor Frango</h6>
-                        <h5 class="text-orange mb-0">R$119,90</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-4.png" alt="">
-                        <h6 class="text-uppercase">Ração para cachorros de Grande porte</h6>
-                        <h5 class="text-orange mb-0">R$139,99</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/guia.jfif" alt="">
-                        <h6 class="text-uppercase">guia para passeio retrátil - 10 metros</h6>
-                        <h5 class="text-orange mb-0">R$29,50</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogtoy.png" alt="">
-                        <h6 class="text-uppercase">Brinquedo de morder</h6>
-                        <h5 class="text-orange mb-0">R$12,99</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/kit.png" alt="">
-                        <h6 class="text-uppercase">kit banho</h6>
-                        <h5 class="text-orange mb-0">R$89,90</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-orange py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="border-start border-5 border-orange ps-5 mb-5" style="max-width: 600px;">
+            <h6 class="text-orange text-uppercase">Produtos</h6>
+            <h1 class="display-5 text-uppercase mb-0">Produtos para seus melhores amigos</h1>
         </div>
+        <div class="owl-carousel product-carousel">
+
+            <div class="pb-5">
+                <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                    <img class="img-fluid mb-4" src="assets/img/dogtoy.png" alt="">
+                    <h6 class="text-uppercase">Brinquedo de morder</h6>
+                    <h5 class="text-orange mb-3">R$12,99</h5>
+                </div>
+            </div>
+
+            <div class="pb-5">
+                <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                    <img class="img-fluid mb-4" src="assets/img/product-2.png" alt="">
+                    <h6 class="text-uppercase">Ração para felinos</h6>
+                    <h5 class="text-orange mb-3">R$99,90</h5>
+                </div>
+            </div>
+
+            <div class="pb-5">
+                <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                    <img class="img-fluid mb-4" src="assets/img/product-4.png" alt="">
+                    <h6 class="text-uppercase">Ração para cachorros de grande porte</h6>
+                    <h5 class="text-orange mb-3">R$139,99</h5>
+                </div>
+            </div>
+
+            <div class="pb-5">
+                <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                    <img class="img-fluid mb-4" src="assets/img/product-3.png" alt="">
+                    <h6 class="text-uppercase">Ração para cães pequenos - sabor Frango</h6>
+                    <h5 class="text-orange mb-3">R$119,90</h5>
+                </div>
+            </div>
+
+            <div class="pb-5">
+                <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                    <img class="img-fluid mb-4" src="assets/img/guia.jfif" alt="">
+                    <h6 class="text-uppercase">Guia retrátil para passeio - 10 metros</h6>
+                    <h5 class="text-orange mb-3">R$29,50</h5>
+                </div>
+            </div>
+
+            <div class="pb-5">
+                <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                    <img class="img-fluid mb-4" src="assets/img/product-3.png" alt="">
+                    <h6 class="text-uppercase">Ração para cães pequenos - sabor Carne</h6>
+                    <h5 class="text-orange mb-3">R$119,90</h5>
+                </div>
+            </div>
+
+            <div class="pb-5">
+                <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                    <img class="img-fluid mb-4" src="assets/img/kit.png" alt="">
+                    <h6 class="text-uppercase">Kit banho</h6>
+                    <h5 class="text-orange mb-3">R$89,90</h5>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="text-center mt-4">
+            <p class="mb-4">Gostou de algum dos nossos produtos? <strong>Veja mais ou clique abaixo e compre agora!</strong></p>
+            <a href="pages/product.html" class="btn btn-orange mt-2">Veja mais produtos</a>
+        </div>
+
     </div>
-    <!-- Products End -->
+</div>
+<!-- Products End -->
+
 
 
     <!-- Oferta Especial PetConnect -->
@@ -592,14 +696,14 @@
             <div class="owl-carousel team-carousel position-relative" style="padding-right: 25px;">
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/Dr1.jpg" alt="">
+                        <img class="img-fluid w-100" src="assets/img/Dr1.jpg" alt="">
                         <div class="team-overlay">
                             <div class="d-flex align-items-center justify-content-start">
-                                <a class="btn btn-light btn-square mx-1" href="perfilDr1.html"><i
+                                <a class="btn btn-light btn-square mx-1" href="pages/perfilDr1.html"><i
                                         class="bi bi-twitter"></i></a>
-                                <a class="btn btn-light btn-square mx-1" href="perfilDr1.html"><i
+                                <a class="btn btn-light btn-square mx-1" href="pages/perfilDr1.html"><i
                                         class="bi bi-facebook"></i></a>
-                                <a class="btn btn-light btn-square mx-1" href="perfilDr1.html"><i
+                                <a class="btn btn-light btn-square mx-1" href="pages/perfilDr1.html"><i
                                         class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
@@ -613,7 +717,7 @@
                 </div>
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/Dr2.jpg" alt="">
+                        <img class="img-fluid w-100" src="assets/img/Dr2.jpg" alt="">
                         <div class="team-overlay">
                             <div class="d-flex align-items-center justify-content-start">
                                 <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
@@ -631,7 +735,7 @@
                 </div>
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/Dr3.jpg" alt="">
+                        <img class="img-fluid w-100" src="assets/img/Dr3.jpg" alt="">
                         <div class="team-overlay">
                             <div class="d-flex align-items-center justify-content-start">
                                 <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
@@ -649,7 +753,7 @@
                 </div>
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/Dr5.jpg" alt="">
+                        <img class="img-fluid w-100" src="assets/img/Dr5.jpg" alt="">
                         <div class="team-overlay">
                             <div class="d-flex align-items-center justify-content-start">
                                 <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
@@ -667,7 +771,7 @@
                 </div>
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/Dr4.jpg" alt="">
+                        <img class="img-fluid w-100" src="assets/img/Dr4.jpg" alt="">
                         <div class="team-overlay">
                             <div class="d-flex align-items-center justify-content-start">
                                 <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
@@ -698,14 +802,14 @@
             <div class="owl-carousel team-carousel position-relative" style="padding-right: 25px;">
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/catolicavet.jpg" alt="">
+                        <img class="img-fluid w-100" src="assets/img/catolicavet.jpg" alt="">
                         <div class="team-overlay">
                             <div class="d-flex align-items-center justify-content-start">
-                                <a class="btn btn-light btn-square mx-1" href="perfil_clinica.html"><i
+                                <a class="btn btn-light btn-square mx-1" href="/pages/perfil_clinica.html"><i
                                         class="bi bi-twitter"></i></a>
-                                <a class="btn btn-light btn-square mx-1" href="perfil_clinica.html"><i
+                                <a class="btn btn-light btn-square mx-1" href="/pages/perfil_clinica.html"><i
                                         class="bi bi-facebook"></i></a>
-                                <a class="btn btn-light btn-square mx-1" href="perfil_clinica.html"><i
+                                <a class="btn btn-light btn-square mx-1" href="/pages/perfil_clinica.html"><i
                                         class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
@@ -719,7 +823,7 @@
                 </div>
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/hvsam.jpg" alt="">
+                        <img class="img-fluid w-100" src="assets/img/hvsam.jpg" alt="">
                         <div class="team-overlay">
                         </div>
                     </div>
@@ -732,7 +836,7 @@
                 </div>
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/icesp.jpg" alt="">
+                        <img class="img-fluid w-100" src="assets/img/icesp.jpg" alt="">
                         <div class="team-overlay">
                             <div class="d-flex align-items-center justify-content-start">
                                 <a class="btn btn-light btn-square mx-1" href="#"><i class="bi bi-twitter"></i></a>
@@ -763,7 +867,7 @@
                     <div class="owl-carousel testimonial-carousel bg-white p-5">
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-4">
-                                <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <img class="img-fluid mx-auto" src="assets/img/testimonial-1.jpg" alt="">
                                 <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white"
                                     style="width: 45px; height: 45px;">
                                     <i class="bi bi-chat-square-quote text-orange"></i>
@@ -778,7 +882,7 @@
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-4">
-                                <img class="img-fluid mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <img class="img-fluid mx-auto" src="assets/img/testimonial-2.jpg" alt="">
                                 <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white"
                                     style="width: 45px; height: 45px;">
                                     <i class="bi bi-chat-square-quote text-orange"></i>
@@ -811,7 +915,7 @@
                     <div class="blog-item">
                         <div class="row g-0 bg-light overflow-hidden">
                             <div class="col-12 col-sm-5 h-100">
-                                <img class="img-fluid h-100" src="img/blog-1.jpg" style="object-fit: cover;"
+                                <img class="img-fluid h-100" src="assets/img/blog-1.jpg" style="object-fit: cover;"
                                     alt="Imagem de um dispositivo de rastreamento para cães">
                             </div>
                             <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
@@ -835,7 +939,7 @@
                     <div class="blog-item">
                         <div class="row g-0 bg-light overflow-hidden">
                             <div class="col-12 col-sm-5 h-100">
-                                <img class="img-fluid h-100" src="img/blog-2.jpg" style="object-fit: cover;"
+                                <img class="img-fluid h-100" src="assets/img/blog-2.jpg" style="object-fit: cover;"
                                     alt="Imagem de um cruzeiro para cães">
                             </div>
                             <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
@@ -963,12 +1067,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <!-- Script para buscar estabelecimentos -->
     <script>
@@ -999,19 +1104,19 @@
                     nome: "Católica Vet",
                     tipo: "Clínica Veterinária",
                     distancia: "0.4km",
-                    imagem: "img/catolicavet.jpg"
+                    imagem: "assets/img/catolicavet.jpg"
                 },
                 {
                     nome: "Clínica Veterinária ICESP",
                     tipo: "Clínica Veterinária",
                     distancia: "2.5km",
-                    imagem: "img/icesp.jpg"
+                    imagem: "assets/img/icesp.jpg"
                 },
                 {
                     nome: "Hospital Veterinário HVSAM",
                     tipo: "Clínica Veterinária",
                     distancia: "5.2km",
-                    imagem: "img/hvsam.jpg"
+                    imagem: "assets/img/hvsam.jpg"
                 }
             ];
 
