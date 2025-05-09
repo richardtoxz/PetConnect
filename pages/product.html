@@ -23,10 +23,12 @@
     <link href="../assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    
 
     <!-- Template Stylesheet -->
-    <link href="../assets/css/style.css" rel="stylesheet">
+    
+    <link rel="preload" href="../assets/css/main.css" as="style">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body>
@@ -66,7 +68,7 @@
 
     <!-- Cart Icon Start -->
     <div class="position-fixed top-0 end-0 p-3">
-        <a href="cart.html" class="btn btn-orange rounded-circle"
+        <a href="../pages/cart.html" class="btn btn-orange rounded-circle"
             style="width: 60px; height: 60px; display: flex; justify-content: center; align-items: center;">
             <i class="bi bi-cart fs-2 text-white"></i>
             <span id="cart-count" class="badge rounded-pill bg-dark position-absolute top-0 end-0 translate-middle-x"
@@ -96,17 +98,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
                 <a href="../index.html" class="nav-item nav-link">Início</a>
-                <a href="../pages/about.html" class="nav-item nav-link ">Sobre nós</a>
-                <a href="../pages/service.html" class="nav-item nav-link">Serviço</a>
+                <a href="price.html" class="nav-item nav-link ">Planos</a>
+                <a href="../pages/service.html" class="nav-item nav-link">Serviços</a>
                 <a href="../pages/product.html" class="nav-item nav-link active">Produto</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                     <div class="dropdown-menu m-0">
-                        <a href="../pages/price.html" class="dropdown-item">Plano de preços</a>
                         <a href="../pages/team.html" class="dropdown-item">A equipe</a>
-                        <a href="../pages/testimonial.html" class="dropdown-item">Depoimento</a>
-                        <a href="../pages/blog.html" class="dropdown-item">Grade de blogs</a>
-                        <a href="../pages/detail.html" class="dropdown-item">Detalhe de blogs</a>
                     </div>
                 </div>
                 <a href="../pages/contact.html" class="nav-item nav-link nav-contact bg-orange text-white px-5 ms-lg-5">Contato <i class="bi bi-arrow-right"></i></a>
@@ -126,7 +124,7 @@
             <div class="owl-carousel product-carousel">
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-1.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/product-1.png" alt="">
                         <h6 class="text-uppercase">Ração natural para pássaros</h6>
                         <h5 class="text-orange mb-0">R$59,99</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -137,7 +135,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-2.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/product-2.png" alt="">
                         <h6 class="text-uppercase">Ração para felinos</h6>
                         <h5 class="text-orange mb-0">R$99,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -148,7 +146,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-3.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/product-3.png" alt="">
                         <h6 class="text-uppercase">Ração para cachorros pequeno porte - sabor Carne</h6>
                         <h5 class="text-orange mb-0">R$119,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -160,7 +158,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/product-4.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/product-4.png" alt="">
                         <h6 class="text-uppercase">Ração para cachorros de Grande porte</h6>
                         <h5 class="text-orange mb-0">R$139,99</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -172,7 +170,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/guia.jfif" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/guia.jfif" alt="">
                         <h6 class="text-uppercase">Guia para passeio retrátil - 10 metros</h6>
                         <h5 class="text-orange mb-0">R$29,50</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -184,7 +182,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogtoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/dogtoy.png" alt="">
                         <h6 class="text-uppercase">Brinquedo de morder</h6>
                         <h5 class="text-orange mb-0">R$12,99</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -195,7 +193,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/kit.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/kit.png" alt="">
                         <h6 class="text-uppercase">Kit banho</h6>
                         <h5 class="text-orange mb-0">R$89,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -206,7 +204,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogtoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/dogtoy.png" alt="">
                         <h6 class="text-uppercase">Brinquedo para gatos</h6>
                         <h5 class="text-orange mb-0">R$19,99</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -217,7 +215,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogtoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/dogtoy.png" alt="">
                         <h6 class="text-uppercase">Ração para peixes</h6>
                         <h5 class="text-orange mb-0">R$15,50</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -228,7 +226,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogtoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/dogtoy.png" alt="">
                         <h6 class="text-uppercase">Cama para cães</h6>
                         <h5 class="text-orange mb-0">R$79,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -239,7 +237,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogtoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/dogtoy.png" alt="">
                         <h6 class="text-uppercase">Coleira para cães</h6>
                         <h5 class="text-orange mb-0">R$29,99</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -250,7 +248,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogtoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/dogtoy.png" alt="">
                         <h6 class="text-uppercase">Comedouro para gatos</h6>
                         <h5 class="text-orange mb-0">R$24,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -261,7 +259,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogtoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/dogtoy.png" alt="">
                         <h6 class="text-uppercase">Brinquedo para cachorros</h6>
                         <h5 class="text-orange mb-0">R$9,99</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -271,7 +269,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/bed.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/bed.png" alt="">
                         <h6 class="text-uppercase">Cama ortopédica para cães</h6>
                         <h5 class="text-orange mb-0">R$169,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -282,7 +280,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/catfood.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/catfood.png" alt="">
                         <h6 class="text-uppercase">Ração Premium para gatos</h6>
                         <h5 class="text-orange mb-0">R$39,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -293,7 +291,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/chewtoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/chewtoy.png" alt="">
                         <h6 class="text-uppercase">Brinquedo de borracha para cães</h6>
                         <h5 class="text-orange mb-0">R$25,00</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -304,7 +302,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/doghouse.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/doghouse.png" alt="">
                         <h6 class="text-uppercase">Casinha para cães</h6>
                         <h5 class="text-orange mb-0">R$249,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -314,7 +312,7 @@
                 </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/cattoy.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/cattoy.png" alt="">
                         <h6 class="text-uppercase">Brinquedo interativo para gatos</h6>
                         <h5 class="text-orange mb-0">R$19,99</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -325,7 +323,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/dogcollar.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/dogcollar.png" alt="">
                         <h6 class="text-uppercase">Coleira com identificação para cães</h6>
                         <h5 class="text-orange mb-0">R$45,00</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -336,7 +334,7 @@
                 
                 <div class="pb-5">
                     <div class="product-item position-relative bg-light d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="img/petbed.png" alt="">
+                        <img class="img-fluid mb-4" src="../assets/img/petbed.png" alt="">
                         <h6 class="text-uppercase">Cama de pet de luxo</h6>
                         <h5 class="text-orange mb-0">R$179,90</h5>
                         <div class="btn-action d-flex justify-content-center">
@@ -344,30 +342,10 @@
                         </div>
                     </div>
                 </div>
-                
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-4">Gostou de algum dos nossos produtos? <strong>Adicione ao carrinho e compre agora!</strong></p>
+                <a href="cart.html" class="btn btn-orange mt-2">Ir para o carrinho</a>
             </div>
         </div>
     </div>
@@ -548,12 +526,12 @@ w
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../assets/lib/easing/easing.min.js"></script>
+    <script src="../assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="../assets/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
